@@ -6,7 +6,7 @@ from django.db import models
 class Ad(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=100)
-    author = models.TextField(max_length=100)
+    author = models.CharField(max_length=50)
     amount_of_views = models.IntegerField()
     position = models.IntegerField()
 
